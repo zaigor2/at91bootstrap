@@ -32,6 +32,10 @@
 #include "at91sam9260ek.h"
 #endif
 
+#ifdef CONFIG_IPRO4
+#include "ipro4.h"
+#endif
+
 #ifdef CONFIG_AT91SAM9XEEK
 #include "at91sam9xeek.h"
 #endif

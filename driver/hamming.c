@@ -27,7 +27,7 @@
  */
 #include "hamming.h"
 
-#ifdef CONFIG_AT91SAM9260EK
+#if defined(CONFIG_AT91SAM9260EK) || defined(CONFIG_IPRO4)
 static unsigned char CountBitsInByte(unsigned char byte)
 {
 	unsigned char count = 0;

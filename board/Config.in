@@ -9,6 +9,7 @@ choice
 	  Select which board you want to build for
 
 source "board/at91sam9260ek/Config.in.board"
+source "board/ipro4/Config.in.board"
 source "board/at91sam9261ek/Config.in.board"
 source "board/at91sam9263ek/Config.in.board"
 source "board/at91sam9rlek/Config.in.board"
@@ -34,6 +35,7 @@ config CONFIG_BOARDNAME
 	string
 	default "at91sam9rlek"	if CONFIG_AT91SAM9RLEK
 	default "at91sam9260ek"	if CONFIG_AT91SAM9260EK
+	default "ipro4"	if CONFIG_IPRO4
 	default "at91sam9261ek"	if CONFIG_AT91SAM9261EK
 	default "at91sam9263ek"	if CONFIG_AT91SAM9263EK
 	default "at91sam9xeek"	if CONFIG_AT91SAM9XEEK

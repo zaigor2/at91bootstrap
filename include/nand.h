@@ -28,7 +28,7 @@
 #ifndef __NAND_H__
 #define __NAND_H__
 
-#ifdef CONFIG_AT91SAM9260EK
+#if defined(CONFIG_AT91SAM9260EK) || defined(CONFIG_IPRO4)
 #define MAX_ECC_BYTES		48  /* maximum bytes of ecc */
 #else
 #define MAX_ECC_BYTES		512 /* maximum bytes of ecc */

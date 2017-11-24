@@ -127,6 +127,11 @@ void lowlevel_clock_init()
 		;
 #endif
 
+#if defined(CONFIG_IPRO4)
+        write_pmc(PMC_MOR, AT91C_CKGR_MOSCXTBY);
+#endif
+
+
 	/* After stablization, switch to Main Oscillator */
 	if ((read_pmc(PMC_MCKR) & AT91C_PMC_CSS) == AT91C_PMC_CSS_SLOW_CLK) {
 		tmp = read_pmc(PMC_MCKR);

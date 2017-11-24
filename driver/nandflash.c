@@ -60,7 +60,7 @@ static struct nand_chip nand_ids[] = {
 	{0x2caa, 0x800, 0x20000, 0x800, 0x40, 0x0},
 	/* Mircon MT29H8G08ACAH1 1GB */
 	{0x2c38, 0x800, 0x80000, 0x1000, 0xe0, 0x0},
-#ifndef CONFIG_AT91SAM9260EK
+#if !defined(CONFIG_AT91SAM9260EK) && !defined(CONFIG_IPRO4)
 	/* Hynix HY27UF082G2A 256MB */
 	{0xadda, 0x800, 0x20000, 0x800, 0x40, 0x0},
 	/* Hynix HY27UF162G2A 256MB */
